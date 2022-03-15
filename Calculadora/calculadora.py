@@ -1,5 +1,10 @@
-numX = int(input("Digite o número um: "))
-numY = int(input("Digite o número dois: "))
+print('**********************************')
+print('Qual operação você quer fazer? \n')
+choice = input(('1- SOMA\n2- SUBTRAÇÃO\n3- MULTIPLICAÇÃO\n4- DIVISÃO\n'))
+
+#numX = int(input("Digite o número um: "))
+#numY = int(input("Digite o número dois: "))
+numY, numX = 5, 5
 
 
 def soma(x, y):
@@ -22,4 +27,6 @@ def div(x, y):
     return x/y
 
 
-print(soma(numX, numY))
+if choice == '1':
+    print('Você escolheu soma')
+#print(soma(numX, numY))
